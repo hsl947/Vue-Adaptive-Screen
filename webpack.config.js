@@ -2,11 +2,13 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
-  entry: './src/main.js',
+  // 根据不同的执行环境配置不同的入口
+  entry: process.env.NODE_ENV === 'development' ? './src/main.js' : './src/index.js',
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: 'build.js'
+    filename: 'vue-adaptive-screen.min.js',
+    libraryTarget: "umd"
   },
   module: {
     rules: [
