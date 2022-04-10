@@ -1,14 +1,19 @@
 <!--
  * @Author: hsl
  * @Date: 2022-04-08 09:51:21
- * @LastEditTime: 2022-04-09 17:51:30
+ * @LastEditTime: 2022-04-10 18:27:18
  * @FilePath: \vue-adaptive-screen\src\App.vue
 -->
 <template>
   <div id="app">
-    <VAdaptiveScreen>
-      <img src="./assets/logo.png">
-    </VAdaptiveScreen>
+      <VAdaptiveScreen>
+        <div class="flex">
+          <!-- <div style="width: 400px;"></div> -->
+          <div class="bg" id="bg">
+            <div class="aaa" v-for="i in 20" :key="i">test</div>
+          </div>
+        </div>
+      </VAdaptiveScreen>
   </div>
 </template>
 
@@ -31,24 +36,27 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
-
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
+body{
+  margin: 0;
   padding: 0;
 }
-
-li {
-  display: inline-block;
-  margin: 0 10px;
+.flex{
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
-
-a {
-  color: #42b983;
+.bg{
+  /* width: 1920px;
+  height: 1080px; */
+  width: 100%;
+  height: 100%;
+  background: url(./assets/img.png) no-repeat;
+  background-size: contain;
+  overflow: hidden;
+}
+.aaa{
+  width: 500px;
+  height: 200px;
 }
 </style>
