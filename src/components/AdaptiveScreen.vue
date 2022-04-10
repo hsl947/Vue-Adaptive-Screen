@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2022-04-08 09:54:45
- * @LastEditTime: 2022-04-10 18:23:16
+ * @LastEditTime: 2022-04-10 20:21:55
  * @FilePath: \vue-adaptive-screen\src\components\AdaptiveScreen.vue
 -->
 <template>
@@ -42,7 +42,7 @@ export default {
       type: [Number, String],
       default: 300
     },
-    // 缩放容器的id, 比如嵌套在页面内的大屏
+    // 缩放容器的id, 比如嵌套在页面内的大屏（该字段功能开发中）
     domId: {
       type: String,
       default: ''
