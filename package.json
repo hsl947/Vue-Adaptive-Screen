@@ -1,14 +1,29 @@
 {
   "name": "vue-adaptive-screen",
   "description": "Vue 2.x 大屏自适应组件",
-  "version": "1.0.3",
+  "version": "1.0.4",
+  "keywords": [
+    "vue",
+    "screen",
+    "adaptive",
+    "scale",
+    "大屏",
+    "自适应",
+    "缩放",
+    "大屏自适应"
+  ],
   "author": "hsl947 <1506070803@qq.com>",
   "license": "MIT",
   "private": false,
   "main": "dist/vue-adaptive-screen.min.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "login": "npm login"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:hsl947/Vue-Adaptive-Screen.git"
   },
   "dependencies": {
     "vue": "^2.5.11"
