@@ -1,3 +1,11 @@
+<!--
+ * @Author: hsl947 1506070803@qq.com
+ * @Date: 2022-04-09 17:50:03
+ * @LastEditors: hsl947 1506070803@qq.com
+ * @LastEditTime: 2022-10-11 17:22:20
+ * @FilePath: \vue-adaptive-screen-npm\README.md
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 ## Vue-Adaptive-Screen
 
 大屏自适应容器组件，可用于大屏项目开发，实现屏幕自适应
@@ -14,7 +22,7 @@ yarn add vue-adaptive-screen
 
 ```js
 // main.js
-import VAdaptiveScreen from 'v-scale-screen'
+import VAdaptiveScreen from 'vue-adaptive-screen'
 Vue.use(VAdaptiveScreen)
 ```
 
